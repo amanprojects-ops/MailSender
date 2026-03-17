@@ -1,0 +1,114 @@
+/* Global Styles for Secure Mailer */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-main: #0b0e14;
+    --card-bg: #151921;
+    --primary: #6366f1;
+    --accent: #10b981;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+p, span, label {
+    color: var(--text-secondary);
+}
+
+strong {
+    color: var(--text-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #334155; }
+
+/* Dashboard Card Animations */
+.card, .stat-card, .template-card, .sender-card, .settings-card, .auth-card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    color: var(--text-primary);
+}
+
+.card:hover, .stat-card:hover, .template-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Button Refinement */
+.btn {
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+}
+
+.btn-primary { 
+    background: linear-gradient(135deg, #6366f1, #4f46e5); 
+    border: none;
+    color: white !important;
+}
+.btn-primary:hover { 
+    background: #4f46e5; 
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Form Elements Aesthetic */
+.form-control, .form-select {
+    background: #1e293b !important;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-primary) !important;
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,0.3);
+}
+
+.form-control:focus, .form-select:focus {
+    background: #1e293b !important;
+    border-color: var(--primary) !important;
+    color: var(--text-primary) !important;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Dark Mode Overrides for Bootstrap Alerts */
+.alert {
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.alert-success { background: rgba(16, 185, 129, 0.1) !important; color: #10b981 !important; }
+.alert-danger { background: rgba(239, 68, 68, 0.1) !important; color: #ef4444 !important; }
+
+/* Link Styles */
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+a:hover {
+    color: #818cf8;
+}
+
+/* Navbar Glow Effect */
+.navbar-brand {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}

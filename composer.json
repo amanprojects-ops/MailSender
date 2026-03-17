@@ -1,0 +1,13 @@
+{
+    "name": "aman/mail-sender",
+    "description": "Secure SMTP Mail Sender",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "6.9"
+    },
+    "authors": [
+        {
+            "name": "Aman"
+        }
+    ]
+}
