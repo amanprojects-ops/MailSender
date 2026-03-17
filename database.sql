@@ -1,7 +1,7 @@
 -- Database Schema for Secure Mail Sender
 
-CREATE DATABASE IF NOT EXISTS `mail_sender_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `mail_sender_db`;
+-- CREATE DATABASE IF NOT EXISTS `mail_sender_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- USE `mail_sender_db`;
 
 -- Users Table
 CREATE TABLE IF NOT EXISTS `users` (

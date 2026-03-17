@@ -2,4 +2,5 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/amanprojects/mailsender.amanprojects.com/
- - /bin/cp * $DEPLOYPATH
+ - /bin/mkdir -p $DEPLOYPATH
+ - /bin/cp -af . $DEPLOYPATH
