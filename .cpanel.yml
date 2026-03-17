@@ -1,6 +1,6 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/amanprojects/https://tb-mail.amanprojects.com/
+ - export DEPLOYPATH=/home/amanprojects/tb-mail.amanprojects.com/
  - /bin/mkdir -p $DEPLOYPATH
  - /bin/cp -af . $DEPLOYPATH
